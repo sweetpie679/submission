@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Main Page</title>
+
+  <style>
+
+    * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Roboto, Apple Gothic, sans-serif, serif,monospace;
+   font-size: 20px;
+   }
+
+  .hero,
+  .about,
+  .services,
+  .cart-container,
+  .contact {
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0 30px;
+  }
+
+  .hero,
+  .contact,
+  .about,
+  .services h1{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          line-height: 2;
+          font-size: 1em;
+          color: black;
+          font-family: Roboto, Apple Gothic, sans-serif, serif,monospace;
+    }
+
+    .hero,
+    .about,
+    .services,
+    .contact,
+    .footer p{
+      display: flex;
+      flex-direction:row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      line-height: 2;
+      font-size: 1em;
+    }
+
+
+  .header {
+      padding: 30px 70px; /* added padding of 30px */
+      display: flex;
+      align-content: center;
+      justify-content: space-between; /*space betweet elements within the header, there are 2 of them*/
+      background-color: #999;
+      line-height: 1.5;
+      position: fixed; /* putting this property makes content slide over nav */
+      width: 100%;
+      top: 0;
+      height: 90px;
+    }
+
+    .logo{
+      font-family: Roboto, Apple Gothic, sans-serif, serif,monospace;
+      line-height: 1.0;
+    }
+
+  .nav {
+        display: flex;
+        align-content: flex-start;
+        justify-content: flex-start;
+        gap: 60px;
+        list-style-type: none;
+        margin-bottom: 0;
+      }
+
+  .nav li a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.2rem;
+      }
+
+    .nav li a:hover{
+      background:#3b5998;
+      color: black;
+    }
+
+    .hero {
+      background-color: seashell;
+      height: auto; 
+    }
+
+
+    .about {
+      background-color: floralwhite;
+      height: auto;
+        }
+
+    .services {
+          background-color: #eee;
+          height: auto;
+        }
+
+    .contact{
+      background-color: #eee;
+      height: auto;
+    }    
+
+
+    .footer {
+          background-color: #777;
+          height: 40px;
+        }
+
+    .container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
+      background-color: #mmm;
+      margin-top: 120px; /* added this one */
+      font-size: 1.5em
+    }
+
+    img{
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+  </style>
+</head>
+
+
+<body>
+
+  <div class="header">
+      <div>
+      <h2 class="logo">Usability & Web Redesign</h2>
+     </div>
+
+     <div>
+      <ul class="nav">
+        <li><a href="#page-desc">Page Description</a></li>
+        <li><a href="#findings">Findings</a></li>
+        <li><a href="#wireframes">Wireframes</a></li>
+        <li><a href="#styles">Style and Hi-Fi</a></li>
+        <li><a href="https://sweetpie679.github.io/redesign/#">Redesigned</a>
+      </ul>
+    </div>
+</div>
+
+
+<div class="container">
+
+  <div class="hero" id="page-desc">
+        <h1>Page Description</h1>
+        <h>Original Page Link: <a href="https://hoteltilapia.wixsite.com/tilapia-def"> Hotel Tilapia</a></p>
+        <p>This is a web page for Tilapia Hotel Limited. I imagine a busy tourist who is very naive about the use of online platforms and is in hurry to check room availability for his family. Before making a booking, users need to be assured of the availability, so they check using the form on the page. I chose the page because it is a nice interface to explore where might usability problems arise and how users might unknowingly be unaware of such issues. Despite being accessible, the interface presents several challenges for users (especially first-time users). The of this work is to improve the online experience for tourists to meet their daily needs during vacations abroad. Users reveal booking a room as something that has to reflect their everyday normal experience, they check/ask for availability and then make a booking. This is what I incorporate into the interface.</p>
+
+        <div> <img src="original.jpg" alt="original website screeshot"></div>
+  </div>
+
+  <div class="about" id="findings">
+
+        <h1>Findings</h1>
+        <!-- <h2>The following usability problems</h2> -->
+        <ul>
+          <li>In terms of learnability, the site seems very confusing with a lot of images and placement of buttons and the main menu at the top and bottom of the page.</li>
+          <li>While images can aid memorability, the site makes use of a lot of them and is poorly arranged to aid memory. This could lead to confusion for users.</li>
+          <li>In terms of efficiency, the site presents a bottleneck, users might spend a considerable amount of time wondering how to navigate the site.</li>
+          <li>Users' conceptual model does not align with the website, it gives them the option to contact them while they would like to make decisions on the fly.</li>
+          <li> Running WebAIM identified issues related to empty labels,low contrast between text and background colours, and missing first-level headings</li>
+          <li>And the most significant one was that the page is not responsive.</li>
+        </ul>
+
+        <div class="images">
+          
+      </div>
+
+  </div>
+
+
+  <div class="services" id="wireframes">
+        <h1>Lo-Fi Wireframes</h1>
+
+        <div class="images">
+            <div>
+              <h2> Mobile Wireframe</h2>
+              <img src="wireframe1.jpg" alt="mobile wireframe">
+            </div>
+
+            <div>
+              <h2> Tablet Wireframe</h2>
+              <img src="wireframe2.jpg" alt="tablet wirefram">
+            </div>
+
+            <div>
+              <h2> Desktop Wireframe</h2>
+              <img src="wireframe3.jpg" alt="desktop wireframe">
+            </div>
+      </div>
+  </div>
+
+  <div class="contact" id="styles">
+        <h1>Visual Design</h1>
+
+         <div class="images">
+             <div>
+              <!-- <h2> Visual Style Guide</h2> -->
+                <img src="style-guide.jpg" alt="ui style guide">
+              </div>
+
+            <div>
+              <h2> Mobile Hi-Fi Prototype</h2>
+              <img src="hi-fi1.jpg" alt="mobile hi-fi prototype">
+            </div>
+
+            <div>
+              <h2> Tablet Hi-Fi Prototype</h2>
+              <img src="hi-fi2.jpg" alt="tablet hi-fi prototype">
+            </div>
+
+            <div>
+              <h2> Desktop Hi-Fi Prototype</h2>
+              <img src="hi-fi3.jpg" alt="desktop hi-fi prototype">
+            </div>
+            <h2> Redesigned <a href="https://sweetpie679.github.io/redesign/#">Tilapia Page</a></h2>
+      </div>
+  </div>
+
+ </div> 
+
+  <div class="footer">
+        <p>&copy; uiux-fall-2022: usability and web redesign</p>
+  </div>
+
+</body>
+</html>
+
