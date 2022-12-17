@@ -1,0 +1,123 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Apple Gothic, sans-serif, serif,monospace;
+    font-size: 20px;
+    } */
+    body{
+        font-family: sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+ 
+   .hero,
+   .about,
+   .services,
+   .contact {
+     width: 1080px;
+     margin: 0 auto;
+     /* margin-bottom: 20px; */
+     padding: 10px;
+   }
+ 
+   h1{
+           display: flex;
+           align-items: center;
+           /* justify-content: center; */
+           /* line-height: 2; */
+           font-size:30px;
+           color: black;
+           font-family: sans-serif;
+     }
+
+     h2{
+        color: rgb(44, 44, 186);
+        font-size: 25px;
+     }
+ 
+     p{
+       display: flex;
+       flex-direction:row;
+       flex-wrap: wrap;
+       justify-content: flex-start;
+       line-height: 2;
+       font-size: 1em;
+     }
+ 
+     header img {
+        height: 80px;
+        margin-left: 40px;
+    }
+    
+    header {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 0 25px 0 black
+    }
+    header * {
+        display: inline;
+    }
+    
+    header li {
+        margin: 20px;
+    }
+    
+    header li a {
+        color: black;
+        text-decoration: none;
+    }
+    
+   
+     .hero {
+       background-color: floralwhite;
+       height: auto; 
+     }
+ 
+ 
+     .about {
+       background-color: floralwhite;
+       height: auto;
+         }
+ 
+     .services {
+           background-color:floralwhite;
+           height: auto;
+         }
+ 
+     .contact{
+       background-color: floralwhite;
+       height: auto;
+     }    
+ 
+     .footer {
+           background-color: #777;
+           height: 40px;
+           position: fixed;
+           bottom: 0;
+           left: 0;
+           right: 0;
+           display: flex;
+           justify-content: center;
+           box-shadow: 0 0 25px 0 black
+         }
+ 
+     .main{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       align-items: center;
+       margin-top: 80px; /* added this one */
+       font-size: 1.5em
+
+     }
+ 
+     img{
+         max-width: 100%;
+         max-height: 100%;
+       }
+ 
